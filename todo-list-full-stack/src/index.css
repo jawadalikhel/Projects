@@ -6,7 +6,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* padding: 50px;
+  background-color: #66CCFF;
+  font-family: sans-serif; */
 }
+
+/* .App {
+  display: flex;
+  justify-content: center;
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

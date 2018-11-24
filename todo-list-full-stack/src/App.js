@@ -13,6 +13,24 @@ class App extends Component {
     }
   }
 
+  addTodo = (todo) =>{
+    todo.id = Math.random();
+    const newTodo = [...this.state.todoArr, todo];
+    this.setState({
+      todoArr: newTodo
+    })
+    console.log(this.state, 'this is todo')
+  }
+
+  deleteTodo = (id) =>{
+    console.log(id, 'this is the DELETE id')
+    const removeTodo = this.state.todoArr.filter(todo =>{
+      return todo.id !== id
+    });
+    this.setState({
+      todoArr: removeTodo,
+    })
+  }
 
   render() {
     console.log(this.state, 'THIS IS THE STATE')
@@ -22,7 +40,7 @@ class App extends Component {
 
         <Form addTodo={this.addTodo}/>
 
-        <ListTodos />
+        <ListTodos showTodo={this.state.todoArr} DeleteTodo={this.deleteTodo}/>
       </div>
     );
   }
