@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import './style.css';
-class ListTodos extends Component {
+import React, { Component } from 'react';
+
+class List extends Component {
   render() {
     const { todos, onTodoClick, onDelete } = this.props;
     return (
@@ -10,11 +10,17 @@ class ListTodos extends Component {
           <li key={index}>
             <div className="outer-div">
               <div className="item-checkbox">
-                <input type="checkbox"  checked={item.checked}
+                <input type="checkbox" checked={item.checked}
                   onChange={() => onTodoClick(item)} />
                 </div>
                 <div className="item-text">
-                  <span className="input" style={checkboxStyle(item.checked)}>{item.value}</span>
+                  <span style={checkboxStyle(item.checked)}>{item.value}</span>
+                </div>
+                <div className="item-remove-div">
+                  <button className="item-remove"
+                    onClick={() => onDelete(index)}>
+                    Remove
+                  </button>
                 </div>
               </div>
               <br />
@@ -23,10 +29,11 @@ class ListTodos extends Component {
       </ul>
     )}
   }
+
 function checkboxStyle(checked) {
   return {
       textDecoration: checked? 'line-through' : 'none',
     };
 }
 
-export default ListTodos;
+export default List;

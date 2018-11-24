@@ -1,1 +1,22 @@
+.add {
+  height: 50px;
+  width: 100%;
+  font-size: 20px;
+}
 
+.add:hover {
+  background: grey;
+  color: white;
+  font-size: 25px;
+}
+
+div .mainCenter{
+  background: blue;
+  height: 100%;
+  width: 50%;
+  margin: auto;
+}
+.footer {
+  font-size: 30px;
+  /* position: fixed; */
+}
