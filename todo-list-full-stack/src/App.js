@@ -36,7 +36,7 @@ class App extends Component {
     console.log(this.state, 'THIS IS THE STATE')
     return (
       <div className="App">
-        <h1>ToDo List React</h1>
+        <h1>ToDoList React</h1>
 
         <Form addTodo={this.addTodo}/>
 

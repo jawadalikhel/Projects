@@ -10,11 +10,10 @@ const ListTodos = ({showTodo, DeleteTodo}) => {
       )
     })
   ): (
-    <p>You have no more todos lefts</p>
+    <h1>You have no more todos lefts</h1>
   )
     return(
       <div>
-        <h1>List ToDo</h1>
         {list}
       </div>
     )

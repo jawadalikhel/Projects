@@ -20,7 +20,6 @@ class Form extends Component{
   render(){
     return(
       <div>
-        <h1>Form</h1>
         <form onSubmit={this.handleSubmit}>
           <input type="text" onChange={this.handleChange} value={this.state.inputTodo} placeholder="Enter Your Todo" />
           <button>Post</button>
