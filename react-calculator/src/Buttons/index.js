@@ -5,6 +5,8 @@ class Buttons extends Component{
     return(
       <div>
         <h1>Buttons</h1>
+
+        <div className="Buttons">{this.props.children} </div>
       </div>
     )
   }

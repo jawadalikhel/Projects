@@ -21,7 +21,9 @@ class Giphy extends Component{
       const giphyJson = await giphyApi.json();
       console.log(giphyApi, ' APIIII')
 
-      this.setState({})
+      this.setState({
+        GiphyData: giphyJson
+      })
 
     } catch (err) {
       console.log(err, ' error in getGiphy')

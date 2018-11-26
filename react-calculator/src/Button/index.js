@@ -4,7 +4,13 @@ class Button extends Component{
   render(){
     return(
       <div>
-        <h1>Button</h1>
+        <div
+          onClick={this.props.onClick}
+          className="Button"
+          data-size={this.props.size}
+          data-value={this.props.value}
+        >
+          {this.props.label}</div>
       </div>
     )
   }
