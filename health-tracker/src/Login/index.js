@@ -5,6 +5,12 @@ class Login extends Component{
     return(
       <div>
         <form>
+        <h4>Login</h4>
+          <input type="text" placeholder="Username" /><br />
+          <input type="password" placeholder="password" /><br />
+          <button>Login</button>
+          <br/>
+          <h3>Register</h3>
           <input type="text" placeholder="Username" /><br />
           <input type="password" placeholder="password" /><br />
           <button>Login</button>
@@ -14,4 +20,4 @@ class Login extends Component{
   }
 }
 
-import default Login;
+export default Login;
