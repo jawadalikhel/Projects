@@ -12,6 +12,7 @@ class Health extends Component {
         <Selection />
         <Coffee />
         <Login />
+        <h2>thats it</h2>
       </div>
     );
   }
