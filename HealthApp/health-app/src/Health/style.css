@@ -1,0 +1,11 @@
+.dashboard {
+  background-color: lightblue;
+  margin: auto;
+  width: 70%;
+  height: 800px;
+}
+
+.dashboard h1 {
+  background-color: black;
+  color: lightblue;
+}
