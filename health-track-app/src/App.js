@@ -12,11 +12,13 @@ import Selection from './HealthComponent/Selection'
 class App extends Component {
   render() {
     return (
+      <div className="App">
       <Switch>
-        <Route exact path='/' component={Login} />
-        <Route path='/selection' component={Selection} />
-        <Route path='/coffee' component={Coffee} />
-      </Switch>
+          <Route exact path='/' component={Login} />
+          <Route path='/selection' component={Selection} />
+          <Route path='/coffee' component={Coffee} />
+        </Switch>
+      </div>
     );
   }
 }

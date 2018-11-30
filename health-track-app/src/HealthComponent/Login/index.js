@@ -1,22 +1,25 @@
 import React, { Component } from 'react';
-
+import './style.css'
 class Login extends Component {
   render() {
     return (
-      <div className="App">
-        <h1>Login</h1>
-        <form>
-          <input type="text" placeholder="username" />
-          <input type="password" placeholder="password" />
-          <button>Login</button>
-        </form>
+      <div className="container">
 
-        <h1>Register</h1>
-        <form>
-          <input type="text" placeholder="username" />
-          <input type="password" placeholder="password" />
-          <button>Register</button>
-        </form>
+        <div className="login">
+          <form>
+            <input className="info" type="text" placeholder="username" /><br/>
+            <input className="info" type="password" placeholder="password" /><br/>
+            <button className="infoBtn"><a href="/selection">Login</a></button><br/>
+          </form>
+        </div>
+
+        <div className="register">
+          <form>
+            <input className="info" type="text" placeholder="username" /><br/>
+            <input className="info" type="password" placeholder="password" /><br/>
+            <button className="infoBtn">Register</button><br/>
+          </form>
+        </div>
       </div>
     );
   }

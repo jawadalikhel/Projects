@@ -1,0 +1,16 @@
+.Coffeecontainer {
+  background-color: lightblue;
+  height: 100%;
+  margin-top: -1.3em;
+}
+
+.logout {
+  margin-left: 11em;
+  margin-top: -1em;
+
+}
+.logout a{
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
