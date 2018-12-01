@@ -1,24 +1,13 @@
 import React, { Component } from 'react';
 import './style.css'
-class Coffe extends Component {
-  constructor(){
-    super();
-    this.state = {
-      daily: [],
-    }
-  }
+import Chart from './Chart';
 
-  getDaily = () =>{
-    const data = this.state.daily;
-    console.log(data, 'data in getDaily');
-  }
+class Coffe extends Component {
+
   render() {
     return (
       <div className="Coffeecontainer">
-
-
-
-        <h1>Coffe</h1>
+        <Chart />
       </div>
     );
   }

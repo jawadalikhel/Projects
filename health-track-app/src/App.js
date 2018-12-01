@@ -8,13 +8,12 @@ import Coffee from './HealthComponent/Coffee'
 import Selection from './HealthComponent/Selection'
 
 
-
 class App extends Component {
   render() {
     return (
       <div className="App">
       <Switch>
-          <Route exact path='/' component={Login} />
+          <Route exact path='/login' component={Login} />
           <Route path='/selection' component={Selection} />
           <Route path='/coffee' component={Coffee} />
         </Switch>
