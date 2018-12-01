@@ -23,6 +23,36 @@ class Chart extends Component{
       }
     }
   }
+
+  IncrementItem4 = () => {
+    console.log(this.state.datasets, 'the state')
+    this.setState({
+      chartData:{
+        labels: ['past', 'daily'],
+        datasets: [
+          {
+            label: 'COFFEE',
+            data: [
+
+              20,
+              this.state.chartData.datasets[0].data[1] + 4,
+              0,
+
+            ],
+            backgroundColor:[
+              'rgba(255,99,132, 0.6)'
+            ]
+          }
+        ]
+      }
+    });
+  }
+
+  handleSubmit = (e) =>{
+    e.preventDefault();
+    console.log(this.state.chartData.datasets[0].data[1], 'hiiiii')
+  }
+
   render(){
     return(
       <div>
@@ -30,6 +60,10 @@ class Chart extends Component{
         <Bar
           data={this.state.chartData}
         />
+
+        <form onSubmit={this.handleSubmit}>
+          <button onClick={this.IncrementItem4}>4oz</button>
+        </form>
       </div>
     )
   }
