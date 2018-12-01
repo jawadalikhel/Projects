@@ -10,19 +10,14 @@ class Chart extends Component{
       labels: ['past', 'daily'],
       datasets: [
         {
-          label: 'COFFEE',
+          label: 'Alcohol',
           data: [
-              30,
+              20,
               0,
-              50,
               0,
           ],
           backgroundColor:[
-            'rgba(255,99,132, 0.6)','lightblue'
-          ],
-          barPercentage:[
-            90
-          ]
+            'rgba(255,99,132,0.6)'            ]
           }
         ]
       }
@@ -39,12 +34,14 @@ class Chart extends Component{
             label: 'COFFEE',
             data: [
 
-              30,
+              20,
               this.state.chartData.datasets[0].data[1] + 4,
-              50,
               0,
-            ],
 
+            ],
+            backgroundColor:[
+              'rgba(255,99,132, 0.6)'
+            ]
           }
         ]
       }
@@ -60,12 +57,15 @@ class Chart extends Component{
           {
             label: 'COFFEE',
             data: [
-              30,
-              this.state.chartData.datasets[0].data[1] + 8,
-              50,
-              0,
-            ],
 
+              20,
+              this.state.chartData.datasets[0].data[1] + 8,
+              0,
+
+            ],
+            backgroundColor:[
+              'rgba(255,99,132, 0.6)'
+            ]
           }
         ]
       }
@@ -81,12 +81,15 @@ class Chart extends Component{
           {
             label: 'COFFEE',
             data: [
-              30,
-              this.state.chartData.datasets[0].data[1] + 16,
-              50,
-              0,
-            ],
 
+              20,
+              this.state.chartData.datasets[0].data[1] + 16,
+              0,
+
+            ],
+            backgroundColor:[
+              'rgba(255,99,132, 0.6)'
+            ]
           }
         ]
       }
@@ -102,12 +105,15 @@ class Chart extends Component{
           {
             label: 'COFFEE',
             data: [
-              30,
-              this.state.chartData.datasets[0].data[1] + 24,
-              50,
-              0,
-            ],
 
+              20,
+              this.state.chartData.datasets[0].data[1] + 24,
+              0,
+
+            ],
+            backgroundColor:[
+              'rgba(255,99,132, 0.6)'
+            ]
           }
         ]
       }
@@ -116,7 +122,7 @@ class Chart extends Component{
 
   handleSubmit = (e) =>{
     e.preventDefault();
-    console.log(this.state.chartData.datasets[0], 'hiiiii')
+    console.log(this.state.chartData.datasets[0].data[1], 'hiiiii')
   }
 
   render(){
@@ -125,9 +131,6 @@ class Chart extends Component{
         <a href="/selection">Back</a>
         <Bar
           data={this.state.chartData}
-        	height={'13em'}
-          width={'10em'}
-
         />
 
         <form onSubmit={this.handleSubmit}>

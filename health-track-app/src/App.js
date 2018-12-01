@@ -5,6 +5,8 @@ import {Switch, Route} from 'react-router-dom';
 // import HealthComponent from './HealthComponent';
 import Login from './HealthComponent/Login'
 import Coffee from './HealthComponent/Coffee'
+import Alcohol from './HealthComponent/Alcohol'
+
 import Selection from './HealthComponent/Selection'
 
 
@@ -16,6 +18,7 @@ class App extends Component {
           <Route exact path='/login' component={Login} />
           <Route path='/selection' component={Selection} />
           <Route path='/coffee' component={Coffee} />
+          <Route path='/alcohol' component={Alcohol} />
         </Switch>
       </div>
     );

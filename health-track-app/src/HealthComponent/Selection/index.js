@@ -12,15 +12,16 @@ class Selection extends Component {
         </div>
 
         <div className="innerSelection">
+
           <div id="coffeeDiv">
           <a href="/" className="logout">Logout</a>
-
             <button ><a href="/coffee">COFFEE</a></button>
           </div>
 
           <div id="alcoholDiv">
-            <button>Alcohol</button>
+            <button ><a href="/alcohol">Alcohol</a></button>
           </div>
+
 
           <div id="summaryDiv">
             <button>Summary</button>

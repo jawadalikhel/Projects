@@ -6,9 +6,15 @@ class Coffe extends Component {
 
   render() {
     return (
-      <div className="Coffeecontainer">
-        <Chart />
-      </div>
+        <div>
+          <div className="dropdown">
+            <span>Fun Facts</span>
+            <div className="dropdown-con">
+              <p>fghjkghhhh</p>
+            </div>
+          </div>
+          <section><Chart/></section>
+        </div>
     );
   }
 }

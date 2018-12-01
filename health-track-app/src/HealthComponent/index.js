@@ -4,6 +4,7 @@ import './style.css';
 
 import Login from './Login';
 import Coffee from './Coffee';
+import Alcohol fro './Alcohol';
 import Selection from './Selection';
 
 class Main extends Component {
@@ -13,6 +14,7 @@ class Main extends Component {
         <h1>Main</h1>
         <Login />
         <Coffee />
+        <Alcohol />
         <Selection />
       </div>
     );

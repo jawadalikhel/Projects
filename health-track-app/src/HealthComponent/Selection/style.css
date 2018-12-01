@@ -69,6 +69,11 @@
 
 }
 
+#alcoholDiv a {
+  color: white;
+  text-decoration: none;
+}
+
 #alcoholDiv button:hover {
   border: 3px dotted silver;
   background-color: orange;
