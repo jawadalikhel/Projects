@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Breakout</title>
+    <style media="screen">
+      *{padding: 0; margin: 0;}
+      canvas {background: #eee; display: block; margin: 0 auto;}
+    </style>
+  </head>
+  <body>
+    <h1>Breakout Game by Jawad Alikhel</h1>
+    <canvas id="myCanvas" width="480" height="320"></canvas>
+
+    <script>
+      const canvas = document.getElementById('myCanvas');
+      const ctx = canvas.getContext('2d');
+      //// x and y is the position of the ball: 2 WAY TO DO THIS
+      //// the starting point is at the bottom center of the canvas
+      let x = canvas.width/2;
+      let y = canvas.height-30;
+      ///// OR THIS WAY
+      // let x = 10;
+      // let y = 300;
+      /////
+      ///////// add small value to x and y in order to move the ball around
+      //// and the number value represents the how many fram per sec the ball is moving
+      /// ********test: increate the value higher
+      let dx = 2;
+      let dy = -2;
+      let ballRadius = 10;
+
+      //// defining the height and width of the paddle and the x-asis starting point
+      let paddleHeight = 10;
+      let paddleWidth = 75;
+      let paddleX = (canvas.width-paddleWidth)/2;
+      ///////// keypress var
+      let rightPressed = false;
+      let leftPressed = false;
+
+      //////// variable for the bricks
+      let brickRowCount = 3;
+      let brickColumnCount = 5;
+      let brickWidth = 75;
+      let brickHeight = 20;
+      let brickPadding = 10;
+      let brickOffsetTop = 30;
+      let brickOffsetLeft = 30;
+
+      let bricks = [];
+      for(let c = 0; c < brickColumnCount; c++){
+        bricks[c] = [];
+        for(let r=0; r < brickRowCount; r++){
+          bricks[c][r] = {x: 0, y:0};
+        }
+      }
+
+      console.log(bricks);
+
+
+      document.addEventListener('keydown', keyDownHandler, false);
+      document.addEventListener('keyup', keyUpHandler, false);
+
+
+      ///// KeyUpHandler(): when we press the button this function stored the info in a variable
+      //// and when press the button it sets the variable to ture when release it sets it to falses
+      function keyDownHandler(e) {
+        if(e.keyCode == 39){
+          rightPressed = true;
+        } else if (e.keyCode == 37){
+          leftPressed = true;
+        }
+      }
+    ///// KeyUpHandler(): handles when the user releases the button
+      function keyUpHandler(e) {
+        if(e.keyCode == 39){
+          rightPressed = false;
+        }else if (e.keyCode == 37){
+          leftPressed = false;
+        }
+      }
+
+      function collisionDetection(){
+        for(let c=0; c<brickColumnCount; c++){
+          for(let r=0; r<brickRowCount; r++){
+            let b = bricks[c][r];
+            if(x > b.x && x < b.x+brickWidth && y > b.y && y < b.y+brickHeight){
+              dy = -dy;
+            }
+          }
+        }
+      }
+
+//// drawBall():  draws the ball
+      function drawBall(){
+        ctx.beginPath();
+        // ctx.clearRect(200,440, canvas.width, canvas.height);
+        ctx.arc(x,y,ballRadius,0, Math.PI*2);
+        ctx.fillSyle = '#0095DD';
+        ctx.fill();
+        ctx.closePath();
+      }
+///////////// drawPaddle(): draws the paddle
+      function drawPaddle(){
+        ctx.beginPath();
+        ctx.rect(paddleX,canvas.height-paddleHeight,paddleWidth, paddleHeight);
+        ctx.fillStyle = '#0095DD';
+        ctx.fill();
+        ctx.closePath();
+      }
+
+/////// THIS FUNCTION IS FOR TO DRAW THE ROW AND COLLUM OF THE BRICKS
+      const drawBricks = () =>{
+        for(let c=0; c <brickColumnCount; c++){
+          for(let r=0; r < brickRowCount; r++){
+            let brickX = (c*(brickWidth+brickPadding)) + brickOffsetLeft;
+            let brickY = (c*(brickHeight+brickPadding)) + brickOffsetTop;
+
+            bricks[c][r].x = brickX;
+            bricks[c][r].y = brickY;
+            ctx.beginPath();
+            ctx.rect(brickX, brickY, brickWidth, brickHeight);
+            ctx.fillSyle = '#0095DD';
+            ctx.fill();
+            ctx.closePath();
+          }
+        }
+      }
+
+
+/////  draw function: uses if statment to check if the ball hits the
+/////  edge of the canvas it will redirect the ball the oposite direction
+      function draw(){
+        //// .clearRect() will clear out the canvas every 10 milliseconds
+        ctx.clearRect(0,0, canvas.width, canvas.height)
+        drawBall();
+        drawPaddle();
+        drawBricks();
+        collisionDetection();
+        ///////////////////////////// test: CONSOLE.LGO()
+        // console.log(x, 'x')
+        // console.log(dx, 'dx')
+        // console.log(y, 'y')
+        // console.log(dy, 'dy')
+        /////////////////////////////
+        if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
+            //// to redirect the ball the oposite side of x coordinates
+            dx = -dx;
+            // console.log('the condition is trueeeee')
+        }
+
+        // if(y + dy > canvas.height-ballRadius || y + dy < ballRadius) {
+        //     dy = -dy;
+        //     // console.log('the condition is trueeeee')
+        // }
+
+        if(y + dy < ballRadius){
+          dy = -dy;
+        }else if (y + dy > canvas.height-ballRadius){
+          if(x > paddleX && x < paddleX + paddleWidth){
+            dy = -dy;
+          }else {
+            alert('game over')
+            document.location.reload();
+          }
+        }
+        console.log('the ball is moving 1sec/min')
+        ////////////////////////////  CONSOLE.LGO() /////////////////////////////////
+        // console.log(dx = -dx , 'dx')
+        // console.log(x + dx , 'x + dx')
+        // console.log(canvas.width, ' <---- canvas.width')
+        // console.log(ballRadius, ' <---- ballRadius')
+        // const add = canvas.width - ballRadius;
+        // console.log(add, '  <---  canvas.width-ballRadius')
+        // console.log(dx = -dx, 'falseeee')
+        /////////////////////////////////////////////////////////////
+        if(rightPressed && paddleX < canvas.width-paddleWidth){
+          paddleX += 7;
+          console.log('pressed tight')
+        } else if (leftPressed && paddleX > 0){
+          paddleX -= 7;
+        }
+        x += dx;
+        y += dy;
+      }
+      // setInterval(draw, 10);
+
+    </script>
+  </body>
+</html>
