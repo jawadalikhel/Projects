@@ -1,49 +1,279 @@
-.container {
-  position: absolute;
-  width: 70%;
-}
-
-.innerSelection {
-  background-color: blue;
-  position: absolute;
+.SelectionContainer {
+  /* position: absolute; */
+  background-color: #18009E;
+  /* background-color: #2F2DC3; */
   width: 100%;
-  height: 100%;
+  height: 600px;
 }
 
 .logout {
-  position: fixed;
   color: red;
   font-size: 20px;
   text-decoration: none;
   float: right;
 }
 
+.wrapper{
+  position: absolute;
+  /* background-color: red; */
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(-50%, -50%);
+  margin-top: 10em;
+  margin-left: 8.5em;
+}
+
+.cup{
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3),inset -2px -2px 3px 1px rgba(0,0,0,.2);
+  width: 150px;
+  height: 150px;
+  background: #fdd47a;
+  border-radius: 5px;
+  position: relative;
+}
+
+.handle{
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3),inset -2px -2px 3px 1px rgba(0,0,0,.2);
+  position: absolute;
+  width: 20px;
+  height: 50px;
+  right: -23px;
+  top: 40px;
+  border: 15px solid #fdd47a;
+  border-left: 0px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  z-index: -1;
+}
+
+.smoke:before {
+  color: white;
+  position: absolute;
+  content: "drinkkkk";
+  background: transparent;
+  width: 145px;
+  height: 30px;
+  top: -35px;
+  box-shadow: 0px 25px 20px -9px grey;
+  opacity: 0;
+  animation: smoke 4s linear infinite;
+  transition: 0.5s linear;
+  margin-left: -100px;
+}
+
+.smoke:after{
+  /* position: absolute; */
+  content: "";
+  background: transparent;
+  width: 145px;
+  height: 30px;
+  top: -35px;
+   box-shadow: 0px 25px 20px -9px grey;
+  opacity: 1;
+  animation: smoke1 4s linear 2s infinite;
+  transition: 0.5s linear;
+  margin-left: -100px;
+
+}
+
+@keyframes smoke {
+  0%{
+   transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-35px);
+    opacity: 1;
+  }
+  70%{
+    transform: translateY(-55px);
+    opacity: 1;
+    width: 75%;
+    /* margin-left: 20px; */
+  }
+
+  80%{
+   transform: translateY(-115px);
+    opacity: 0;
+    width: 20%;
+    /* margin-left: 40px; */
+  }
+
+}
+
+@keyframes smoke1 {
+  0%{
+   transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-45px);
+    opacity: 1;
+  }
+  70%{
+    transform: translateY(-65px);
+    opacity: 1;
+    width: 50%;
+    /* margin-left: 30px; */
+  }
+
+  100%{
+   transform: translateY(-145px);
+    opacity: 0;
+    width: 0%;
+    /* margin-left: 60px; */
+  }
+
+}
+
+/*  */
+/*  */
+/*  */
 
 
-#coffeeDiv {
+
+.Alwrapper{
+  position: absolute;
+  /* background-color: red; */
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(-50%, -50%);
+  margin-top: 30em;
+  margin-left: 8.5em;
+}
+
+.Alcup{
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3),inset -2px -2px 3px 1px rgba(0,0,0,.2);
+  width: 150px;
+  height: 150px;
+  background: #fdd47a;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* .Alhandle{
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3),inset -2px -2px 3px 1px rgba(0,0,0,.2);
+  position: absolute;
+  width: 20px;
+  height: 50px;
+  right: -23px;
+  top: 40px;
+  border: 15px solid #fdd47a;
+  border-left: 0px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  z-index: -1;
+} */
+
+.Alsmoke:before {
+  color: white;
+  position: absolute;
+  content: "drinkkkk";
+  background: transparent;
+  width: 145px;
+  height: 30px;
+  top: -35px;
+  box-shadow: 0px 25px 20px -9px grey;
+  opacity: 0;
+  animation: drink 4s linear infinite;
+  transition: 0.5s linear;
+  margin-left: -100px;
+}
+
+.Alsmoke:after{
+  /* position: absolute; */
+  content: "";
+  background: transparent;
+  width: 145px;
+  height: 30px;
+  top: -35px;
+   box-shadow: 0px 25px 20px -9px grey;
+  opacity: 1;
+  animation: drink1 4s linear 2s infinite;
+  transition: 0.5s linear;
+  margin-left: -100px;
+
+}
+
+@keyframes drink {
+  0%{
+   transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-35px);
+    opacity: 1;
+  }
+  70%{
+    transform: translateY(-55px);
+    opacity: 1;
+    width: 75%;
+    /* margin-left: 20px; */
+  }
+
+  80%{
+   transform: translateY(-115px);
+    opacity: 0;
+    width: 20%;
+    /* margin-left: 40px; */
+  }
+
+}
+
+@keyframes drink1 {
+  0%{
+   transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-45px);
+    opacity: 1;
+  }
+  70%{
+    transform: translateY(-65px);
+    opacity: 1;
+    width: 50%;
+    /* margin-left: 30px; */
+  }
+
+  100%{
+   transform: translateY(-145px);
+    opacity: 0;
+    width: 0%;
+    /* margin-left: 60px; */
+  }
+
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/* .innerSelection {
+  background-color: blue;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+} */
+
+/* #coffeeDiv {
   background-image: url('https://images.freeimages.com/images/premium/small-comps/1991/19911057-coffee-background.jpg');
   background-repeat: no-repeat;
   height: 33.3333333%;
   background-size: cover;
 
-}
+} */
 
-#coffeeDiv a{
+/* #coffeeDiv a{
   color: white;
   text-decoration: none;
-}
+} */
 
-#coffeeDiv button {
-  /* background-color: orange; */
+/* #coffeeDiv button {
   background-color: inherit;
   border: none;
   color: white;
   width: 250px;
   font-size: 50px;
   margin-top: 1.3em;
-}
+} */
 
-#coffeeDiv button:hover {
+/* #coffeeDiv button:hover {
   border: 3px dotted silver;
   background-color: brown;
 
@@ -59,7 +289,6 @@
 }
 
 #alcoholDiv button {
-  /* background-color: orange; */
   background-color: inherit;
   border: none;
   color: white;
@@ -67,9 +296,9 @@
   font-size: 50px;
   margin-top: 1.3em;
 
-}
+} */
 
-#alcoholDiv a {
+/* #alcoholDiv a {
   color: white;
   text-decoration: none;
 }
@@ -78,9 +307,9 @@
   border: 3px dotted silver;
   background-color: orange;
 
-}
+} */
 
-#summaryDiv {
+/* #summaryDiv {
   background-image: url('https://blog.syncfusion.com/wp-content/uploads/2018/08/Tile_EJ2_Chart01_9a806554-256x256.png');
   background-repeat: no-repeat;
   height: 33.3333333%;
@@ -94,7 +323,6 @@
 }
 
 #summaryDiv button {
-  /* background-color: orange; */
   background-color: inherit;
   border: none;
   color: white;
@@ -102,9 +330,9 @@
   font-size: 50px;
   margin-top: .7em;
 
-}
+} */
 
-#summaryDiv button:hover {
+/* #summaryDiv button:hover {
   border: 3px dotted silver;
   background-color: blue;
-}
+} */

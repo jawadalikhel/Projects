@@ -3,7 +3,7 @@ import './style.css'
 class Login extends Component {
   render() {
     return (
-      <div className="container">
+      <div className="Logincontainer">
 
         <div className="login">
           <form>
