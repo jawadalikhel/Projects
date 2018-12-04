@@ -1,6 +1,6 @@
 .SelectionContainer {
   /* position: absolute; */
-  background-color: #18009E;
+  /* background-color: #18009E; */
   /* background-color: #2F2DC3; */
   width: 100%;
   height: 600px;
@@ -11,6 +11,7 @@
   font-size: 20px;
   text-decoration: none;
   float: right;
+  background: 'green';
 }
 
 .wrapper{
@@ -18,16 +19,16 @@
   /* background-color: red; */
   /* top: 50%;
   left: 50%; */
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -60%);
   margin-top: 10em;
   margin-left: 8.5em;
 }
 
 .cup{
-  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3),inset -2px -2px 3px 1px rgba(0,0,0,.2);
+  box-shadow: 1px 3px 4px rgba('0, 0, 0, 0.3'),inset -2px -2px 3px 1px rgba(0,0,0,.2);
   width: 150px;
   height: 150px;
-  background: #fdd47a;
+  background-color: #69140E;
   border-radius: 5px;
   position: relative;
 }
@@ -130,7 +131,7 @@
 
 
 
-.Alwrapper{
+.alcoholWrapper{
   position: absolute;
   /* background-color: red; */
   /* top: 50%;
@@ -140,13 +141,13 @@
   margin-left: 8.5em;
 }
 
-.Alcup{
+.glass{
+  position: relative;
   box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3),inset -2px -2px 3px 1px rgba(0,0,0,.2);
-  width: 150px;
+  width: 100px;
   height: 150px;
   background: #fdd47a;
   border-radius: 5px;
-  position: relative;
 }
 
 /* .Alhandle{
@@ -239,6 +240,23 @@
     /* margin-left: 60px; */
   }
 
+}
+
+
+
+
+
+
+.bowl {
+  position: relative;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.5), inset 0 -20px 5px 0 rgba(0, 0, 0, 0.2), inset -15px 0 5px 0 rgba(0, 0, 0, 0.1), inset 15px 0 5px 0 rgba(0, 0, 0, 0.1);
+  background: -moz-radial-gradient(center, ellipse cover, transparent 0%, transparent 76%, rgba(0, 0, 0, 0.65) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, transparent 0%, transparent 76%, rgba(0, 0, 0, 0.65) 100%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 76%, rgba(0, 0, 0, 0.65) 100%);
+  margin: 20px;
 }
 /*  */
 /*  */
