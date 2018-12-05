@@ -1,14 +1,15 @@
 .Logincontainer {
   /* background-image: url('https://backgroundcheckall.com/wp-content/uploads/2017/12/health-background-7.jpg'); */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
-  height: 37.5em;
-  width: 18.09em;
-  /* color: white; */
-  /* height: 100%; */
-  /* margin-top: -150px; */
-  background-color: #114B5F;
+  /* background-color: #114B5F; */
+  /* background-color: #A997DF; */
+  /* background-color: #F1F7EE; */
+  /* background-color: #4281A4; */
+  background-color:  #4281A4;
+  border-radius: 8%;
+  border: 2px solid grey;
   position: absolute;
+  height: 44em;
+  width: 25em;
 }
 
 .login {
@@ -32,7 +33,9 @@
   font-weight: bold;
   font-size: 30px;
   border-radius: 15%;
-  background-color: #FF6B35;
+  /* background-color: #D6EDFF; */
+  background-color: #F1F7EE;
+
 
 }
 
