@@ -43,6 +43,18 @@ class Selection extends Component {
             </section>
           </div>
         </a>
+
+        <a href="/summary">
+          <div id="summary">
+            <section>
+              <h1>Summary</h1>
+            </section>
+          </div>
+        </a>
+
+        <div className="bottomOfScreen">
+          <div className="homeBtn">Home</div>
+        </div>
     </div>
 
 

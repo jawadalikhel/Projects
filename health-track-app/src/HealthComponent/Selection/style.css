@@ -46,8 +46,6 @@
   color: black;
 }
 
-
-
  /*  ///////////////////////////////  logout STYLE*/
 
 .logout {
@@ -437,4 +435,53 @@
   margin-left: .5em;
   width: 17em;
   height: 10em;
+}
+
+/*  ///////////////////////////////////////////////  */
+#summary {
+  height: 12em;
+  width: 24em;
+  background-color: lightblue;
+  border-radius: 5%;
+  /* margin-left: 5em; */
+  margin-top: -9em;
+  margin-left: .5em;
+}
+
+/*  ///////////////////////////////////////   Bottom of screen style*/
+.bottomOfScreen {
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  /* bottom: 93.5%; */
+  top: 40.1em;
+  margin-left: -.05em;
+  width: 97.3%;
+  height: 5em;
+  border-bottom-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+}
+
+.bottomOfScreen a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.bottomOfScreen a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.homeBtn {
+  /* background-color: black; */
+  width: 3.5em;
+  height: 3.5em;
+  margin: auto;
+  border-radius: 50%;
+  border: 5px solid gold;
 }
