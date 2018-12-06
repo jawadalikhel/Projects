@@ -4,16 +4,14 @@ import './style.css';
 
 import Login from './Login';
 import Coffee from './Coffee';
-import Alcohol fro './Alcohol';
+import Alcohol from './Alcohol';
+import Summary from './Summary';
 import Selection from './Selection';
 
 class Main extends Component {
   render() {
     return (
       <div className="main">
-        <h1>Main</h1>
-        <Coffee />
-        <Alcohol />
         <Selection />
       </div>
     );

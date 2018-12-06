@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './style.css'
 import Chart from './Chart';
+import Device from '../Device';
 
-class Coffe extends Component {
+class Coffee extends Component {
 
   render() {
     return (
@@ -14,12 +15,10 @@ class Coffe extends Component {
 
           <section><Chart/></section>
 
-          <div id="bottomOfScreen">
-            <div className="homeBtn"></div>
-          </div>
+          <Device />
         </div>
     );
   }
 }
 
-export default Coffe;
+export default Coffee;

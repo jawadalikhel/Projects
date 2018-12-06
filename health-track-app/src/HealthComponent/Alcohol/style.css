@@ -16,8 +16,29 @@
 }
 
 div .chart {
-  /* background-color: red; */
-  margin-top: 10em;
-  height: 400px;
+  background-color: red;
+  margin-top: -35em;
+  margin-left: 1.4em;
+  height: 25em;
+  width: 23em;
   position: absolute;
+}
+
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+.dropdown-con {
+  display: none;
+  position: absolute;
+  background-color: red;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-con {
+  display: block;
 }

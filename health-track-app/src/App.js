@@ -6,6 +6,7 @@ import {Switch, Route} from 'react-router-dom';
 import Login from './HealthComponent/Login'
 import Coffee from './HealthComponent/Coffee'
 import Alcohol from './HealthComponent/Alcohol'
+import Summary from './HealthComponent/Summary';
 
 import Selection from './HealthComponent/Selection'
 
@@ -19,6 +20,7 @@ class App extends Component {
           <Route path='/selection' component={Selection} />
           <Route path='/coffee' component={Coffee} />
           <Route path='/alcohol' component={Alcohol} />
+          <Route path='/summary' component={Summary} />
         </Switch>
       </div>
     );

@@ -14,10 +14,10 @@
 }
 
 .topScreen {
-  overflow: hidden;
   background-color: black;
   /* background: red; */
   position: absolute;
+  overflow: hidden;
   height: 4.5em;
   width: 25em;;
   border-top-right-radius: 2em;
@@ -40,15 +40,14 @@ section {
 } */
 
 /*  ///////////////////////////////////////   Bottom of screen style*/
-#bottomOfScreen {
+#bottomScreen {
   overflow: hidden;
   background-color: black;
-  position: fixed;
-  /* bottom: 93.5%; */
-  top: 40.1em;
+  position: absolute;
   margin-left: -.05em;
-  width: 97.3%;
+  width: 96%;
   height: 5em;
+  margin-top: 39em;
   border-bottom-right-radius: 2em;
   border-bottom-left-radius: 2em;
 }

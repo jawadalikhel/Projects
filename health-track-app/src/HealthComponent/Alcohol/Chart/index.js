@@ -131,6 +131,8 @@ class Chart extends Component{
         <a href="/selection">Back</a>
         <Bar
           data={this.state.chartData}
+          height={'40em'}
+          width={'40em'}
         />
 
         <form onSubmit={this.handleSubmit}>
