@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 import './style.css';
 import { Icon, Menu } from 'semantic-ui-react'
 import Coffee from '../Coffee';
+import Device from '../Device';
 
 class Selection extends Component {
   render() {
     return (
       <div className="SelectionContainer">
-        <div className="topOfScreen"></div>
-
-        <a href="/" id="logout">Logout</a>
+        <Device />
 
         <a href="/coffee">
           <div className="wrapper">
@@ -50,10 +49,6 @@ class Selection extends Component {
             </section>
           </div>
         </a>
-
-        <div id="bottomOfScreen">
-          <div className="homeBtn"></div>
-        </div>
     </div>
 
 

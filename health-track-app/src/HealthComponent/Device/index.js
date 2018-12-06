@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './style.css';
 
 class Device extends Component{
+
   render(){
     return(
       <div className="Container">
@@ -10,8 +11,8 @@ class Device extends Component{
         <div id="bottomScreen"><div className="homeBtn"></div></div>
 
         <div className="nav">
-          <a href="/selection">Back</a>
-          <a href="/">Logout</a>
+          <a href="/selection" ><button className="back">Back</button></a><br />
+          <a href="/"><button className="logout">Logout</button></a>
         </div>
 
       </div>

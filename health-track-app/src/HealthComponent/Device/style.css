@@ -1,29 +1,42 @@
-.Container {
-  /* position: fixed; */
-  border: 5px solid red;
-  text-align: center;
-  border-top-right-radius: 2em;
-  border-top-left-radius: 2em;
-  border-bottom-right-radius: 2em;
-  border-bottom-left-radius: 2em;
-  height: 44em;
-  width: 25em;
-  margin: auto;
-  margin-top: 1em;
-  background-color: #282c34;
-}
+
 
 .nav {
   position: absolute;
   margin-top: 34em;
-  background-color: red;
-  width: 24.97em;
+  background-color: #8693AB;
+  width: 25em;;
   height: 5em;
 }
 
 .nav a {
   color: white;
+  padding-right: 9em;
+  margin-right: 5em;
   text-decoration: none;
+}
+
+.back {
+  position: absolute;
+  background-color: blue;
+  width: 10em;
+  height: 5em;
+  margin-top: .6em;
+  float: left;
+}
+
+/* .goBack {
+  position: absolute;
+  background-color: red;
+  text-decoration: none;
+  margin-top: 30em;
+} */
+
+.logout{
+  position: absolute;
+  background-color: blue;
+  width: 10em;
+  height: 5em;
+  margin-left: 10em;
 }
 
 .topScreen {
@@ -35,21 +48,7 @@
   width: 25em;;
   border-top-right-radius: 2em;
   border-top-left-radius: 2em;
-  /* z-index: 1; */
 }
-
- /*  ///////////////////////////////  logout STYLE*/
-/*
-#logout {
-  background-color: blue;
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
-  float: right;
-  margin-top: 3.6em;
-  z-index: 1;
-} */
-
 
 #bottomScreen {
   overflow: hidden;
@@ -61,13 +60,6 @@
   margin-top: 39em;
   border-bottom-right-radius: 2em;
   border-bottom-left-radius: 2em;
-}
-
-.goBack {
-  position: absolute;
-  background-color: red;
-  text-decoration: none;
-  margin-top: 30em;
 }
 
 .homeBtn {

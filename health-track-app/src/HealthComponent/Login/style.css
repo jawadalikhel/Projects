@@ -4,33 +4,14 @@
   /* background-color: #A997DF; */
   /* background-color: #F1F7EE; */
   /* background-color: #4281A4; */
-  background-color:  #4281A4;
+  /* background-color:  #4281A4; */
+  background-color: #152c34;
   border-radius: 8%;
   border: 2px solid grey;
   position: absolute;
   height: 44em;
   width: 25em;
 }
-
-
-
-.topScreen {
-  background-color: black;
-  /* background: red; */
-  position: absolute;
-  overflow: hidden;
-  height: 4.5em;
-  width: 25em;;
-  border-top-right-radius: 2em;
-  border-top-left-radius: 2em;
-  /* z-index: 1; */
-}
-
-
-
-
-
-
 
 .login {
   margin-top: 120px;
@@ -62,4 +43,73 @@
 .infoBtn a {
   text-decoration: none;
   color: black;
+}
+
+
+
+
+
+
+
+
+
+
+/* .nav {
+  position: absolute;
+  margin-top: 34em;
+  background-color: red;
+  width: 24.97em;
+  height: 5em;
+} */
+
+/* .nav a {
+  color: white;
+  background-color: blue;
+  padding-right: 9em;
+  margin-right: 5em;
+  text-decoration: none;
+} */
+
+/* .back {
+  background-color: blue;
+  width: 10em;
+  height: 5em;
+  float: left;
+} */
+
+/* .logout{
+  position: absolute;
+  background-color: blue;
+  width: 10em;
+  height: 5em;
+  margin-left: 10em;
+} */
+
+.LtopScreen {
+  background-color: black;
+  overflow: hidden;
+  height: 4.5em;
+  width: 25em;;
+  border-top-right-radius: 2em;
+  border-top-left-radius: 2em;
+}
+
+#LbottomScreen {
+  overflow: hidden;
+  background-color: black;
+  position: absolute;
+  width: 25.2em;
+  height: 5em;
+  margin-top: 35em;
+  border-bottom-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+}
+
+.LhomeBtn {
+  /* background-color: black; */
+  width: 3.5em;
+  height: 3.5em;
+  margin: auto;
+  border-radius: 50%;
+  border: 5px solid silver;
 }

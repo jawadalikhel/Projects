@@ -5,6 +5,10 @@ class Login extends Component {
     return (
       <div className="Logincontainer">
 
+        <div className="LtopScreen"></div>
+        <div id="LbottomScreen"><div className="LhomeBtn"></div></div>
+
+
         <div className="login">
           <form>
             <input className="info" type="text" placeholder="username" /><br/>

@@ -9,16 +9,7 @@ class Alcohol extends Component {
     return (
       <div className="Alcoholcontainer">
         <Device />
-
         <div className="chart"><Chart /></div>
-
-        <div className="dropdown">
-          <span>Func facts</span>
-
-          <div className="dropdown-con">
-            <button>dfghjk,fghj</button>
-          </div>
-        </div>
       </div>
     );
   }

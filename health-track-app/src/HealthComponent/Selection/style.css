@@ -25,10 +25,9 @@
 
 
 
-.topOfScreen {
+/* .topOfScreen {
   overflow: hidden;
   background-color: #333;
-  /* background: red; */
   position: fixed;
   margin-top: 0em;
   margin-left: -.2em;
@@ -37,18 +36,18 @@
   border-top-right-radius: 2em;
   border-top-left-radius: 2em;
   z-index: 1;
-}
+} */
 
  /*  ///////////////////////////////  logout STYLE*/
 
-#logout {
+/* #logout {
   background-color: blue;
   color: white;
   font-size: 20px;
   text-decoration: none;
   float: right;
   margin-top: 3.6em;
-}
+} */
 /*  ///////////////////////////////  coffee STYLE*/
 
 .wrapper{

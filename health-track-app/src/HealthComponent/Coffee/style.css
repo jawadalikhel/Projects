@@ -9,38 +9,30 @@
   margin: auto;
   margin-top: 1em;
   background-color: #282c34;
+  /* background-color: #8693AB; */
   z-index: -1;
 
 }
 
 .topScreen {
   background-color: black;
-  /* background: red; */
   position: absolute;
   overflow: hidden;
   height: 4.5em;
   width: 25em;;
   border-top-right-radius: 2em;
   border-top-left-radius: 2em;
-  /* z-index: 1; */
 }
 
 section {
-  /* background-color: red; */
   position: absolute;
   margin-top: 5em;
   margin-left: .5em;
   width: 24em;
   height: 25em;
 }
-
-/* Bar {
-  position: absolute;
-  background-color: blue;
-} */
-
 /*  ///////////////////////////////////////   Bottom of screen style*/
-#bottomScreen {
+/* #bottomScreen {
   overflow: hidden;
   background-color: black;
   position: absolute;
@@ -50,20 +42,12 @@ section {
   margin-top: 39em;
   border-bottom-right-radius: 2em;
   border-bottom-left-radius: 2em;
-}
+} */
 
-.goBack {
-  position: absolute;
-  background-color: red;
-  text-decoration: none;
-  margin-top: 30em;
-}
-
-.homeBtn {
-  /* background-color: black; */
+/* .homeBtn {
   width: 3.5em;
   height: 3.5em;
   margin: auto;
   border-radius: 50%;
   border: 5px solid silver;
-}
+} */
