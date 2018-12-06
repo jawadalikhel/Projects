@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Bar, Line, Pie} from 'react-chartjs-2';
+import './style.css';
 
 class Chart extends Component{
   constructor(){
@@ -18,7 +19,7 @@ class Chart extends Component{
               0,
           ],
           backgroundColor:[
-            'rgba(255,99,132, 0.6)','lightblue'
+            '#70A9A1','lightblue'
           ],
           barPercentage:[
             90
@@ -38,7 +39,6 @@ class Chart extends Component{
           {
             label: 'COFFEE',
             data: [
-
               30,
               this.state.chartData.datasets[0].data[1] + 4,
               50,
@@ -122,19 +122,18 @@ class Chart extends Component{
   render(){
     return(
       <div>
-        <a href="/selection">Back</a>
-        <Bar
+        <Bar className="bar"
           data={this.state.chartData}
-        	height={'13em'}
-          width={'10em'}
+        	height={'40em'}
+          width={'40em'}
 
         />
 
-        <form onSubmit={this.handleSubmit}>
-          <button onClick={this.IncrementItem4}>4oz</button>
-          <button onClick={this.IncrementItem8}>8oz</button>
-          <button onClick={this.IncrementItem16}>16oz</button>
-          <button onClick={this.IncrementItem24}>24oz</button>
+        <form onSubmit={this.handleSubmit} className="data">
+          <button onClick={this.IncrementItem4} className="btn">4oz</button>
+          <button onClick={this.IncrementItem8} className="btn">8oz</button>
+          <button onClick={this.IncrementItem16} className="btn">16oz</button>
+          <button onClick={this.IncrementItem24} className="btn">24oz</button>
         </form>
       </div>
     )

@@ -7,10 +7,9 @@ class Selection extends Component {
   render() {
     return (
       <div className="SelectionContainer">
+        <div className="topOfScreen"></div>
 
-        <div className="navbar">
-          <a href="/" className="logout">Logout</a>
-        </div>
+        <a href="/" id="logout">Logout</a>
 
         <a href="/coffee">
           <div className="wrapper">
@@ -47,13 +46,13 @@ class Selection extends Component {
         <a href="/summary">
           <div id="summary">
             <section>
-              <h1>Summary</h1>
+              <p>Summary</p>
             </section>
           </div>
         </a>
 
-        <div className="bottomOfScreen">
-          <div className="homeBtn">Home</div>
+        <div id="bottomOfScreen">
+          <div className="homeBtn"></div>
         </div>
     </div>
 
