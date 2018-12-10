@@ -1,4 +1,8 @@
-
+.Dcontainer {
+  position: relative;
+  /* height: 100%; */
+  /* background: green; */
+}
 
 .nav {
   position: absolute;
@@ -17,7 +21,7 @@
 
 .back {
   position: absolute;
-  background-color: blue;
+  background-color: silver;
   width: 10em;
   height: 5em;
   margin-top: .6em;
@@ -33,7 +37,7 @@
 
 .logout{
   position: absolute;
-  background-color: blue;
+  background-color: silver;
   width: 10em;
   height: 5em;
   margin-left: 10em;
@@ -55,7 +59,7 @@
   background-color: black;
   position: absolute;
   margin-left: .1em;
-  width: 96%;
+  width: 25em;
   height: 5em;
   margin-top: 39em;
   border-bottom-right-radius: 2em;

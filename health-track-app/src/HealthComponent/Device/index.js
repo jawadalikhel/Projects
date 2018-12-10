@@ -5,7 +5,7 @@ class Device extends Component{
 
   render(){
     return(
-      <div className="Container">
+      <div className="Dcontainer">
 
         <div className="topScreen"></div>
         <div id="bottomScreen"><div className="homeBtn"></div></div>
