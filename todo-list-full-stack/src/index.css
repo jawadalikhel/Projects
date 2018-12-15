@@ -19,28 +19,6 @@ body {
 
 }
 
-
-
-
-
-
-
-.mainCenter form .input{
-  /* background: red; */
-  /* width: 200%; */
-  /* height: 450px; */
-  /* margin: 0 auto; */
-  /* border: 5px solid black; */
-  position: relative;
-  margin: auto;
-  height: 50px;
-  width: 99%;
-  font-size: 30px;
-  /* width: 100px; */
-}
-
-
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

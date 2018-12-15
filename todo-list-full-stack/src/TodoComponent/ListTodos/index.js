@@ -10,8 +10,8 @@ class ListTodos extends Component {
           <li key={index} className="list">
             <div className="outer-div">
 
-              <div>
-                <input type="checkbox"  checked={item.checked} onChange={() => onTodoClick(item)} />
+              <div >
+                <input className="input" type="checkbox"  checked={item.checked} onChange={() => onTodoClick(item)} />
               </div>
 
               <div>

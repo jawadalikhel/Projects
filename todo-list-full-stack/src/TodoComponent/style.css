@@ -1,9 +1,10 @@
-#center {
-  /* background-color: lightblue; */
-  background-color: silver;
+#MainContainer {
+  background-color: lightblue;
+  /* background-color: silver; */
   /* background-color: grey; */
   /* background-color: black; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  /* background-color: lightcyan; */
   border-radius: 1em;
   height: 44em;
   width: 36em;
@@ -17,3 +18,42 @@
     width: 100%;
   }
 } */
+
+.mainCenter {
+  border: 2px solid black;
+}
+
+.form {
+  /* background-color: blue; */
+  height: 3em;
+}
+
+.inputBox {
+  /* background-color: green; */
+  border-left: 1px solid black;
+  /* border-radius: 10%; */
+  float: left;
+  width: 13.7em;
+  font-size: 2em;
+}
+
+.add {
+  background-color: orange;
+  float: right;
+  width: 11.8em;
+  height: 4em;
+  margin-top: -1.6em;
+}
+
+.add h1 {
+  margin-top: -.1em;
+  font-size: 3.5em;
+}
+
+.footer-outer {
+  /* background-color: red; */
+  font-size: 2em;
+  width: 14em;
+  margin: auto;
+  margin-top: 1em;
+}
