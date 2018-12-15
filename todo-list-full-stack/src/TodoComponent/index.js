@@ -41,7 +41,7 @@ class TodoContainer extends Component {
   render() {
     console.log(this.state, 'THIS IS THE STATE')
     return (
-      <div className="center">
+      <div id="center">
         <div class="row header">
           <h1 class="col s6 offset-s3 center-align teal-text">My To-Do List!</h1>
         </div>
@@ -49,8 +49,8 @@ class TodoContainer extends Component {
         <div className="mainCenter">
           <form onSubmit={this.onSubmit} class="col s6 offset-s3" className="form">
             <input placeholder="add task" value={this.state.term} onChange={this.handleChange}
-            className="inputField" className="input"/>
-            <button className="add">Add to the List</button>
+            className="inputField" className="input"/><br/>
+            <button className="add">Add</button>
           </form>
 
           <TodoList
@@ -64,7 +64,7 @@ class TodoContainer extends Component {
 
         <footer className="footer-outer">
           <span className="footer">
-            Number of completed items in an array:
+            Number of items completed:
             {this.state.items.filter(item => item.checked).length}
           </span>
         </footer>

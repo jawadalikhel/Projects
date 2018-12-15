@@ -4,20 +4,21 @@ class ListTodos extends Component {
   render() {
     const { todos, onTodoClick, onDelete } = this.props;
     return (
-      <ul className='list-style'>
+      <ul className="Container">
         {
           todos.map((item, index) =>
-          <li key={index}>
+          <li key={index} className="list">
             <div className="outer-div">
-              <div className="item-checkbox">
-                <input type="checkbox"  checked={item.checked}
-                  onChange={() => onTodoClick(item)} />
-                </div>
-                <div className="item-text">
-                  <span className="input" style={checkboxStyle(item.checked)}>{item.value}</span>
-                </div>
+
+              <div>
+                <input type="checkbox"  checked={item.checked} onChange={() => onTodoClick(item)} />
               </div>
-              <br />
+
+              <div>
+                <li style={checkboxStyle(item.checked)}>{item.value}</li>
+              </div>
+
+            </div><br />
           </li>
         )}
       </ul>
