@@ -8,3 +8,6 @@ This is a Todo list App. This app lets user add the items they need to complete 
 1. React.js
 2. EJS and HTML
 3. CSS
+
+## App img
+![alt text](src/img/todo2.png)
