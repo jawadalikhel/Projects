@@ -9,3 +9,5 @@ This is a Todo list App. This app lets user add the items they need to complete 
 
 ## App img
 ![alt text](public/img/todo2.png)
+
+
