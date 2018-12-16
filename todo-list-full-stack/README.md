@@ -8,5 +8,4 @@ This is a Todo list App. This app lets user add the items they need to complete 
 3. CSS
 
 ## App img
-(src/img/todo2.png)
-<img src="src/img/todo2.png" />
+![alt text](public/img/todo2.png)
