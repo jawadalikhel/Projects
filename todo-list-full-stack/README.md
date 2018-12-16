@@ -10,6 +10,6 @@ This is a Todo list App. This app lets user add the items they need to complete 
 ## App img
 ![alt text](public/img/todo2.png)
 
-#Further Challenges 
+## Further Challenges 
 1. I would like to to make this a full stack app with back end in Node.js. 
 2. Add a calender
