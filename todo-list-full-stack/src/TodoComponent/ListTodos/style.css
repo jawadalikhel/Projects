@@ -3,15 +3,15 @@
   /* border: 5px solid black; */
   height: 27em;
   overflow:scroll;
-  color:
 }
 
 
 .outer-div {
-  background-color: cyan;
-  /* background-color: black; */
-  padding: 10px;
+  background-color: white;
+  /* border-bottom: 5px dotted black; */
+  padding: 25px;
   height: 50px;
+  overflow: scroll;
 }
 
 .input[type=checkbox] {

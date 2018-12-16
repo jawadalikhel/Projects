@@ -48,7 +48,7 @@ class TodoContainer extends Component {
 
         <div className="form">
           <form onSubmit={this.onSubmit} >
-            <input className="inputBox" value={this.state.term} onChange={this.handleChange} placeholder="add task"/><br/>
+            <input className="inputBox" value={this.state.term} onChange={this.handleChange} placeholder="add task"/>
             <button className="add"><h1>Add</h1></button>
           </form>
         </div>
