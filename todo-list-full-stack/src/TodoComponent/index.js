@@ -43,7 +43,7 @@ class TodoContainer extends Component {
     return (
       <div id="MainContainer">
         <div>
-          <h1>My Todo List!</h1>
+          <h1 className="header">Things Todo!</h1>
         </div>
 
         <div className="form">
